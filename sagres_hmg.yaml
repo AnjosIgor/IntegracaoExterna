@@ -12,7 +12,7 @@ collection:
     meta:
       id: req_8df8ae42925f41caa73e8568b1987031
       created: 1792672291539
-      modified: 1792674622461
+      modified: 1792676076989
       isPrivate: false
       description: ""
       sortKey: -1792672291539
@@ -64,10 +64,12 @@ collection:
     headers:
       - name: Content-Type
         value: application/json
+      - name: Authorization
+        value: Bearer {{ _.authHMG }}
+        description: ""
+        disabled: false
     authentication:
-      type: bearer
-      token: 4A420829-D4F9-4B1E-A93A-9EFDD5D457FB
-      prefix: Bearer
+      type: none
     settings:
       renderRequestBody: true
       encodeUrl: true
