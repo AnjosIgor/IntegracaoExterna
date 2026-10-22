@@ -1,0 +1,21 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: SAGRES_PRD
+meta:
+  id: wrk_322ba168ad134e53b6dd651f28bd944a
+  created: 1792672632906
+  modified: 1792672632906
+  description: ""
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_77060f7db18072f3f732012db9af42f5f7d635a5
+    created: 1792672632928
+    modified: 1792672632928
+environments:
+  name: Base Environment
+  meta:
+    id: env_77060f7db18072f3f732012db9af42f5f7d635a5
+    created: 1792672632926
+    modified: 1792672632926
+    isPrivate: false

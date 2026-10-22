@@ -1,0 +1,102 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: SAGRES_HMG
+meta:
+  id: wrk_5908a1dcef244f579412531197e9e3cb
+  created: 1792672276887
+  modified: 1792672276887
+  description: ""
+collection:
+  - url: "{{ _.baseURL }}/api/Rest/Sagres/ReceberPRBarcaca"
+    name: ReceberPRBarcaca
+    meta:
+      id: req_8df8ae42925f41caa73e8568b1987031
+      created: 1792672291539
+      modified: 1792674622461
+      isPrivate: false
+      description: ""
+      sortKey: -1792672291539
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "ImoBarcaca": "0001200",
+          "CodigoViagem": "001/26",
+          "CaladoProa": "6.00",
+          "CaladoPopa": "6.00",
+          "Observacao": "SEM OBSERVAÇÕES",
+          "ListaPorao": [
+            {
+              "CodigoPorao": 1,
+              "DCs": {
+                "ListaDCs": [
+                    {
+                  "CnpjCliente":  "05291903000192",
+                  "NcmTipoMercadoria": "47032900",
+                  "CodMaterial": "CR3133",
+                  "DescMaterial": "C-CR3133",
+                  "CodQualidade": "C",
+                  "TipoDocumento": "DELIVERY",
+                  "CodigoDocumento": "SAG120OPEN01",
+                  "Caracteristica": [
+                  ],
+                  "Unidades": [
+                    {
+                      "CodigoUnidade": "SAG120OPEN101",
+                      "PesoUnidade": 2.001
+                    },
+                    {
+                      "CodigoUnidade": "SAG120OPEN102",
+                      "PesoUnidade": 2.001
+                    },
+                    {
+                      "CodigoUnidade": "SAG120OPEN103",
+                      "PesoUnidade": 2.001
+                    }
+                   ]
+                 }
+                ]
+             }
+            }
+          ]
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: 4A420829-D4F9-4B1E-A93A-9EFDD5D457FB
+      prefix: Bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_a6b701a7250c0c76c24c862cce1ffee14bf7aeac
+    created: 1792672276896
+    modified: 1792674626313
+  cookies:
+    - id: 1f4695db-9ddb-4930-a1df-bbd05980afe4
+      key: ASP.NET_SessionId
+      value: dci2fagyalihxxbesqtvrqzp
+      domain: sgp.sagresrg.com.br
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
+environments:
+  name: Base Environment
+  meta:
+    id: env_a6b701a7250c0c76c24c862cce1ffee14bf7aeac
+    created: 1792672276894
+    modified: 1792672675805
+    isPrivate: false
+  data:
+    baseURL: https://sgp.sagresrg.com.br/qas/sgp.integracao
